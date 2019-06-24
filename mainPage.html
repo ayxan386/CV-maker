@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>CV maker</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to my CV maker</h1>
+    </header>
+    <main>
+        <form action="cv.html" method="GET">
+            <div class="left">
+                Photo : <br>
+                First name:<br>
+                Second name:<br>
+                Date of birth:<br>
+                Age:<br>
+            </div>
+            <div class="right">
+                <input type="file" name="photo">
+                <br>
+                <input type="text" name="firstname" placeholder="First name" required>
+                <br>
+                <input type="text" name="secondname" placeholder="Second name" required>
+                <br>
+                <input type="date" name="birth" placeholder="Date of birth" required>
+                <br>
+                <input type="number" name="age" placeholder="Age" required>
+                <br>
+            </div>
+            <div class="abilities">
+                <div class="hobbies">
+                Hobbies <button onclick="addHobby(this)" type="button">Add hobby</button>
+                <br>
+                <input type="text" name="hobby0">
+                <br>
+                </div>
+                <div class="skills">
+                Skills <button onclick="addSkill(this)"type="button">Add Skill</button>
+                <br>
+                <input type="text" name="skill0">
+                <br>    
+                </div>
+            </div>
+            <div class="left">
+                Phone number: <br>
+                email: <br>
+                Twitter(link): <br>
+            </div>
+            <div class="right">
+                    <input type="tel" name="phonenumber"><br>
+                    <input type="email" name="email"><br>
+                    <input type="text" name="twitter"><br>
+            </div>
+            <br>
+            <button type="submit">Submit</button> 
+            <button type="reset">Reset</button>
+        </form>
+        
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
